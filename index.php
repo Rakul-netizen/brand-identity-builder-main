@@ -25,6 +25,7 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
   </noscript>
   <link rel="stylesheet" href="./landing.css" />
+  <link rel="stylesheet" href="./form.css" />
   <script type="application/ld+json">
       {
         "@context": "https://schema.org",
@@ -44,6 +45,7 @@
 </head>
 
 <body>
+  <?php include "includes/quotes-form.php"; ?>
   <?php include "includes/header.php"; ?>
   <main>
     <section id="home" class="rb-hero d-flex align-items-center">
@@ -63,7 +65,7 @@
           </p>
           <div class="d-flex flex-wrap gap-3">
             <a href="#profile" class="btn rb-btn-primary btn-lg px-4">Our Services</a>
-            <a href="#contact" class="btn rb-btn-outline-light btn-lg px-4">Get a Quote</a>
+            <a href="#" id="quotes" class="btn rb-btn-outline-light btn-lg px-4">Get a Quote</a>
           </div>
         </div>
       </div>
@@ -357,6 +359,106 @@
   <script>
     document.getElementById("rbYear").textContent = new Date().getFullYear();
   </script>
+  <script>
+const form = document.querySelector(".quotes-form");
+
+// ================= VALIDATORS =================
+const validators = {
+  name: value =>
+    value.trim().length >= 3 || "Full name must be at least 3 characters",
+
+  email: value =>
+    /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(value) || "Enter a valid email address",
+
+  phone: value =>
+    value === " " || /^[0-9+\s()-]{7,}$/.test(value) || "Enter a valid phone number",
+
+  projectType: value =>
+    value && value !== "Select Services" || "Please select a service",
+
+  location: value =>
+    value.trim() !== " " || "Location is required",
+
+  size: value =>
+    value === " " || Number(value) > 0 || "Size must be a positive number",
+
+  budget: value =>
+    value === " " || Number(value) > 0 || "Budget must be a positive number",
+
+  timeline: value => {
+    if (!value) return true;
+    const selectedDate = new Date(value);
+    const today = new Date();
+    today.setHours(0,0,0,0);
+    return selectedDate >= today || "Timeline must be a future date";
+  },
+
+  description: value =>
+    value.trim().length >= 10 || "Message must be at least 10 characters"
+};
+
+// ================= EVENTS =================
+Object.keys(validators).forEach(id => {
+  const input = document.getElementById(id);
+  if (!input) return;
+
+  const error = input.nextElementSibling;
+
+  // Validate on blur
+  input.addEventListener("blur", () => validate(input, error));
+
+  // Clear error while typing
+  input.addEventListener("input", () => clearError(input, error));
+});
+
+// ================= SUBMIT =================
+form.addEventListener("submit", e => {
+  e.preventDefault();
+  let isValid = true;
+
+  Object.keys(validators).forEach(id => {
+    const input = document.getElementById(id);
+    if (!input) return;
+
+    const error = input.nextElementSibling;
+    if (!validate(input, error)) {
+      isValid = false;
+    }
+  });
+
+  if (isValid) {
+    alert("Form submitted successfully!");
+    form.reset();
+  }
+});
+
+// ================= HELPERS =================
+function validate(input, error) {
+  const rule = validators[input.id];
+  const result = rule(input.value);
+
+  if (result !== true) {
+    showError(input, error, result);
+    return false;
+  }
+
+  clearError(input, error);
+  return true;
+}
+
+function showError(input, error, message) {
+  input.classList.add("error-border");
+  error.textContent = message;
+}
+
+function clearError(input, error) {
+  input.classList.remove("error-border");
+  error.textContent = "";
+}
+</script>
+
+
+  <script src="./script.js"></script>
 </body>
 
 </html>

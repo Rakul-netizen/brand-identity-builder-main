@@ -22,6 +22,7 @@
     <link rel="stylesheet" href="./about-us.css">
     <link rel="stylesheet" href="./services.css">
     <link rel="stylesheet" href="./landing.css" />
+    <link rel="stylesheet" href="./form.css" />
     <script type="application/ld+json">
         {
             "@context": "https://schema.org",
@@ -38,6 +39,7 @@
 </head>
 
 <body>
+    <?php include "includes/consulation-form.php"; ?>
     <?php include "includes/header.php"; ?>
     <main>
         <section class="rb-page-header">
@@ -225,7 +227,7 @@
                     </div>
                 </article>
                 <div class="our-process__btn py-4">
-                    <button class="our-process__button">Schedule a Free Consultation</button>
+                    <button id="our-process__button" class="our-process__button">Schedule a Free Consultation</button>
                 </div>
             </div>
         </section>
@@ -302,6 +304,14 @@
         </section>
     </main>
     <?php include "includes/footer.php"; ?>
+    <script>
+        document.getElementById('our-process__button').addEventListener('click',()=>{
+            document.querySelector('.consulation-form__section').style.display="flex";
+})
+document.querySelector('.consulation-form__close-btn').addEventListener('click',()=>{
+    document.querySelector('.consulation-form__section').style.display="none";
+})
+    </script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"
         defer></script>
