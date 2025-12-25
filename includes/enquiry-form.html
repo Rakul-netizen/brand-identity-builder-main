@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="preload" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" as="style"
+        onload="this.onload=null;this.rel='stylesheet'">
+    <noscript>
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+    </noscript>
+    <link rel="stylesheet" href="../form.css">
+</head>
+
+<body>
+    <div class="enquiry-form__section">
+        <form class="enquiry-form" role="form" aria-label="enquiry form">
+            <input type="hidden" name="csrf_token" value="YOUR_GENERATED_TOKEN_HERE">
+            <div class="enquiry-form__close-btn">
+                <span>x</span>
+            </div>
+            <div class="enquiry-form__input-group row">
+                <div class="col-12 col-md-6">
+                    <input type="text" id="name" name="name" placeholder="Full Name" required>
+                    <small class="error"></small>
+                </div>
+                <div class="col-12 col-md-6">
+                    <input type="email" id="email" name="email" placeholder="Email Address" required>
+                    <small class="error"></small>
+                </div>
+            </div>
+            <div class="enquiry-form__input-group row">
+                <div class="col-12 col-md-6">
+                    <input type="tel" id="phone" name="phone" placeholder="Phone Number">
+                    <small class="error"></small>
+                </div>
+                <div class="col-12 col-md-6">
+                    <select id="projectType" name="projectType">
+                        <option selected disabled>Select Services</option>
+                        <option value="residential">Residential Construction</option>
+                        <option value="commercial">Commercial Construction</option>
+                        <option value="renovation">Renovation/Remodeling</option>
+                        <option value="renovation">Architectural Design Only</option>
+                        <option value="renovation">Interior Works</option>
+                    </select>
+                    <small class="error"></small>
+                </div>
+            </div>
+            <div class="enquiry-form__input-group row">
+                <div class="col-12">
+                    <textarea id="description" name="description" placeholder="Message"></textarea>
+                    <small class="error"></small>
+                </div>
+            </div>
+            <div class="enquiry-form__action-btn">
+                <button type="submit">Submit</button>
+            </div>
+        </form>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"
+        defer></script>
+    <script>
+        const form = document.querySelector(".enquiry-form");
+
+        const validators = {
+            name: value =>
+                value.trim().length >= 3 || "Full name must be at least 3 characters",
+
+            email: value =>
+                /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(value) || "Enter a valid email address",
+
+            phone: value =>
+                value === " " || /^[0-9+\s()-]{7,}$/.test(value) || "Enter a valid phone number",
+
+            projectType: value =>
+                value && value !== "Select Services" || "Please select a service",
+
+            description: value =>
+                value.trim().length >= 10 || "Message must be at least 10 characters"
+        };
+
+        // Attach blur + input events
+        Object.keys(validators).forEach(id => {
+            const input = document.getElementById(id);
+            if (!input) return;
+
+            const error = input.nextElementSibling;
+
+            input.addEventListener("blur", () => validate(input, error));
+            input.addEventListener("input", () => clearError(input, error));
+        });
+
+        // Submit validation
+        form.addEventListener("submit", e => {
+            e.preventDefault();
+            let isValid = true;
+
+            Object.keys(validators).forEach(id => {
+                const input = document.getElementById(id);
+                if (!input) return;
+
+                const error = input.nextElementSibling;
+                if (!validate(input, error)) isValid = false;
+            });
+
+            if (isValid) {
+                alert("Enquiry submitted successfully!");
+                form.reset();
+            }
+        });
+
+        // Helper functions
+        function validate(input, error) {
+            const result = validators[input.id](input.value);
+            if (result !== true) {
+                showError(input, error, result);
+                return false;
+            }
+            clearError(input, error);
+            return true;
+        }
+
+        function showError(input, error, message) {
+            input.classList.add("error-border");
+            error.textContent = message;
+        }
+
+        function clearError(input, error) {
+            input.classList.remove("error-border");
+            error.textContent = "";
+        }
+    </script>
+
+</body>
+
+</html>
