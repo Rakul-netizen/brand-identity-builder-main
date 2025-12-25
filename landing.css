@@ -1,0 +1,495 @@
+:root {
+  --rb-primary: #c8102e;
+  --rb-primary-dark: #a30d25;
+  --rb-charcoal: #111111;
+  --rb-dark-grey: #333333;
+  --rb-muted-bg: #f7f7f7;
+  --rb-card-bg: #ffffff;
+}
+
+body {
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  color: var(--rb-dark-grey);
+}
+.menu-icon span {
+  display: block;
+  width: 30px;
+  height: 2px;
+  background: #0F2A3A;
+  border-radius: 3px;
+  margin: 6px 0;
+}
+.navbar-toggler{
+  border: none;
+}
+.nav-item.dropdown {
+  position: relative;
+}
+
+.nav-item.dropdown .dropdown-menu {
+  position: absolute;
+  top: 100%;
+}
+
+.nav-item.dropdown:hover .dropdown-menu {
+  display: block;
+  margin-top: 0;
+  color: var(--rb-primary-dark);
+}
+
+.nav-item .dropdown .dropdown-item.hover {
+  color: var(--rb-primary-dark);
+}
+
+.dropdown-menu .dropdown-item:hover {
+  color: var(--rb-primary-dark);
+  background-color: white;
+}
+
+.rb-text-primary {
+  color: var(--rb-primary);
+}
+
+.rb-header {
+  border-bottom: 1px solid rgba(0, 0, 0, 0.06);
+  background-color: #ffffff;
+}
+
+.rb-logo {
+  height: 48px;
+  width: auto;
+}
+
+@media (max-width:768px) {
+  .rb-logo {
+    height: 40px;
+    width: 150px;
+  }
+}
+
+.rb-header .nav-link {
+  font-weight: 500;
+  color: var(--rb-dark-grey);
+}
+
+.rb-header .nav-link:hover,
+.rb-header .nav-link:focus {
+  color: var(--rb-primary);
+}
+
+.rb-header-phones {
+  font-size: 0.9rem;
+}
+
+.rb-header-phone {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.35rem;
+  text-decoration: none;
+  color: var(--rb-dark-grey);
+}
+
+.rb-header-phone:hover {
+  color: var(--rb-primary);
+}
+
+.rb-header-phone-icon {
+  width: 20px;
+  height: 20px;
+  border-radius: 999px;
+  border: 2px solid var(--rb-primary);
+}
+
+.rb-hero {
+  min-height: 700px;
+  position: relative;
+  color: #ffffff;
+  overflow: hidden;
+}
+
+.rb-hero-bg {
+  position: absolute;
+  inset: 0;
+  background-image: url("https://images.unsplash.com/photo-1504307651254-35680f356dfd?q=80&w=2076");
+  background-size: cover;
+  background-position: center;
+  transform: scale(1.02);
+}
+
+.rb-hero-overlay {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(90deg, rgba(17, 17, 17, 0.9), rgba(17, 17, 17, 0.7), transparent);
+}
+
+.rb-hero-badge {
+  padding: 0.5rem 1.4rem;
+  border-radius: 999px;
+  border: 1px solid rgba(255, 255, 255, 0.4);
+  background: rgba(255, 255, 255, 0.1);
+  text-transform: uppercase;
+  font-size: 0.78rem;
+  letter-spacing: 0.12em;
+}
+
+.rb-hero-title {
+  font-size: clamp(2.6rem, 4vw, 3.8rem);
+  font-weight: 800;
+  line-height: 1.1;
+  color: #ffffff;
+}
+
+.rb-hero-subtitle {
+  font-size: 1.05rem;
+  max-width: 34rem;
+  color: rgba(255, 255, 255, 0.9);
+}
+
+.rb-hero-bottom-fade {
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  height: 80px;
+  background: linear-gradient(to top, #ffffff, transparent);
+}
+
+.rb-btn-primary {
+  background-color: var(--rb-primary);
+  border-color: var(--rb-primary);
+  font-weight: 700;
+  box-shadow: 0 18px 40px rgba(200, 16, 46, 0.5);
+}
+
+.rb-btn-primary:hover,
+.rb-btn-primary:focus {
+  background-color: var(--rb-primary-dark);
+  border-color: var(--rb-primary-dark);
+}
+
+.rb-btn-outline-light {
+  border-width: 2px;
+  border-color: #ffffff;
+  color: #ffffff;
+  font-weight: 700;
+}
+
+.rb-btn-outline-light:hover,
+.rb-btn-outline-light:focus {
+  background-color: #ffffff;
+  color: var(--rb-charcoal);
+}
+
+.rb-section {
+  padding: 4.5rem 0;
+}
+
+.rb-section-muted {
+  background-color: var(--rb-muted-bg);
+}
+
+.rb-section-title {
+  font-size: clamp(2rem, 3vw, 2.5rem);
+  font-weight: 800;
+  color: var(--rb-charcoal);
+}
+
+.rb-section-subtitle {
+  display: inline-flex;
+  justify-content: center;
+  font-size: 1rem;
+  max-width: 34rem;
+  color: var(--rb-dark-grey);
+}
+
+.rb-feature-card {
+  background-color: var(--rb-card-bg);
+  border-radius: 0.75rem;
+  padding: 1.75rem;
+  border: 1px solid rgba(0, 0, 0, 0.06);
+  box-shadow: 0 18px 40px rgba(0, 0, 0, 0.05);
+  transition: all 0.25s ease;
+}
+
+.rb-feature-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 24px 60px rgba(0, 0, 0, 0.08);
+}
+
+.rb-feature-title {
+  font-size: 1.25rem;
+  font-weight: 700;
+  color: var(--rb-charcoal);
+}
+
+.rb-feature-text {
+  text-align: justify;
+  margin-bottom: 0;
+  color: var(--rb-dark-grey);
+  font-size: 0.95rem;
+}
+
+.rb-service-card {
+  background-color: var(--rb-card-bg);
+  border-radius: 0.75rem;
+  overflow: hidden;
+  border: 1px solid rgba(0, 0, 0, 0.06);
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+.rb-service-image-wrapper {
+  position: relative;
+  overflow: hidden;
+  height: 190px;
+}
+
+.rb-service-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.5s ease;
+}
+
+.rb-service-card:hover .rb-service-image {
+  transform: scale(1.08);
+}
+
+.rb-service-body {
+  padding: 1.5rem;
+}
+
+.rb-service-title {
+  font-size: 1.1rem;
+  font-weight: 700;
+  margin-bottom: 0.5rem;
+  color: var(--rb-charcoal);
+}
+
+.rb-service-text {
+  text-align: justify;
+  font-size: 0.9rem;
+  color: var(--rb-dark-grey);
+  margin-bottom: 0.75rem;
+}
+
+.rb-link-button {
+  background: none;
+  border: none;
+  padding: 0;
+  color: var(--rb-primary);
+  font-weight: 600;
+  font-size: 0.9rem;
+  cursor: pointer;
+}
+
+.rb-link-button:hover {
+  text-decoration: underline;
+}
+
+.rb-check-item {
+  position: relative;
+  padding-left: 1.7rem;
+  font-size: 0.95rem;
+  color: var(--rb-dark-grey);
+}
+
+.rb-check-item::before {
+  content: "";
+  position: absolute;
+  top: 0.35rem;
+  left: 0;
+  width: 0.9rem;
+  height: 0.9rem;
+  border-radius: 999px;
+  border: 2px solid var(--rb-primary);
+}
+
+.rb-about-image-wrapper {
+  border-radius: 0.9rem;
+  overflow: hidden;
+  box-shadow: 0 22px 60px rgba(0, 0, 0, 0.25);
+}
+
+.rb-about-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.rb-stat-box {
+  position: absolute;
+  background-color: var(--rb-card-bg);
+  border-radius: 0.75rem;
+  padding: 1.25rem 1.75rem;
+  box-shadow: 0 20px 50px rgba(0, 0, 0, 0.18);
+}
+
+.rb-stat-experience {
+  bottom: -18px;
+  left: -18px;
+  background-color: var(--rb-primary);
+  color: #ffffff;
+}
+
+.rb-stat-projects {
+  top: 18px;
+  right: 18px;
+  border-left: 4px solid var(--rb-primary);
+}
+
+.rb-stat-number {
+  font-size: 2.1rem;
+  font-weight: 800;
+}
+
+.rb-stat-label {
+  font-size: 0.9rem;
+  font-weight: 600;
+}
+
+.rb-project-card {
+  position: relative;
+  border-radius: 0.75rem;
+  overflow: hidden;
+  cursor: pointer;
+}
+
+.rb-project-image-wrapper {
+  position: relative;
+  height: 250px;
+  overflow: hidden;
+}
+
+.rb-project-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.6s ease;
+}
+
+.rb-project-card:hover .rb-project-image {
+  transform: scale(1.08);
+}
+
+.rb-project-overlay {
+  position: absolute;
+  inset: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  padding: 1.5rem;
+  background: linear-gradient(to top, rgba(17, 17, 17, 0.85), rgba(17, 17, 17, 0.3), transparent);
+  color: #ffffff;
+}
+
+.rb-project-category {
+  font-size: 0.85rem;
+  font-weight: 700;
+  color: var(--rb-primary);
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  margin-bottom: 0.35rem;
+}
+
+.rb-project-title {
+  font-size: 1.15rem;
+  font-weight: 700;
+}
+
+.rb-contact-section {
+  position: relative;
+  padding: 4.5rem 0;
+  color: #ffffff;
+}
+
+.rb-contact-bg {
+  position: absolute;
+  inset: 0;
+  background-image: url("https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?q=80&w=2070");
+  background-size: cover;
+  background-position: center;
+  opacity: 0.2;
+}
+
+.rb-contact-overlay {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(135deg, var(--rb-primary), #3a4f6b);
+}
+
+.rb-contact-label {
+  font-size: 0.9rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.12em;
+}
+
+.rb-contact-value {
+  color: #ffffff;
+  text-decoration: none;
+  font-size: 0.95rem;
+}
+
+.rb-contact-value:hover {
+  text-decoration: underline;
+}
+
+.rb-btn-light {
+  background-color: #ffffff;
+  color: var(--rb-charcoal);
+  font-weight: 700;
+}
+
+.rb-btn-light:hover {
+  background-color: #f3f3f3;
+}
+
+.rb-footer {
+  background-color: #111111;
+  color: rgba(255, 255, 255, 0.8);
+}
+
+.rb-footer-tagline {
+  font-size: 0.8rem;
+  color: rgba(255, 255, 255, 0.6);
+}
+
+@media (max-width: 767.98px) {
+  .rb-hero {
+    min-height: 560px;
+  }
+
+  .rb-hero-title {
+    font-size: 2.1rem;
+  }
+
+  .rb-section {
+    padding: 3.25rem 0;
+  }
+
+  .rb-about-image-wrapper {
+    margin-bottom: 2.5rem;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 991.98px) {
+  .rb-about-text {
+    text-align: justify;
+    max-width: 100%;
+  }
+}
+
+.offcanvas-end {
+  width: 280px;
+}
+
+.offcanvas .nav-link {
+  font-weight: 500;
+  color: var(--rb-dark-grey);
+}
+
+.offcanvas .nav-link:hover {
+  color: var(--rb-primary);
+}

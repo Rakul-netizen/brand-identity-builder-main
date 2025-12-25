@@ -1,0 +1,149 @@
+:root {
+    --rb-primary: #C8102E;
+    --rb-primary-dark: #a00d25;
+    --rb-charcoal: #111111;
+    --rb-dark-grey: #333333;
+    --rb-light-grey: #F7F7F7;
+    --rb-card-bg: #FFFFFF;
+    --rb-muted-bg: #f0f0f0;
+}
+
+hr {
+    width: 100%;
+    margin: 5px;
+}
+
+.call__container {
+    border-radius: 20px;
+    padding: 1rem;
+    background-color: var(--rb-card-bg);
+}
+
+i {
+    color: var(--rb-primary-dark);
+}
+
+.email__container {
+    border-radius: 20px;
+    padding: 1rem;
+    background-color: var(--rb-card-bg);
+}
+
+.message__container {
+    border-radius: 20px;
+    padding: 1rem;
+    background-color: var(--rb-card-bg);
+}
+
+.message__container div>i {
+    border: 1px solid var(--rb-primary-dark);
+}
+
+.message__form {
+    padding: 1rem;
+    border-radius: 10px;
+    background-color: var(--rb-card-bg);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 10px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+}
+
+input,
+textarea {
+    padding: 10px;
+    outline: none;
+    width: 100%;
+}
+
+.message__action-btn {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+
+.message__button {
+    border: none;
+    padding: 0.5rem 1rem;
+    font-weight: bold;
+    background-color: var(--rb-primary);
+    box-shadow: 0 15px 30px rgba(217, 4, 41, 0.45);
+}
+
+.message__container ul {
+    padding-left: 0;
+    list-style: none;
+}
+
+.message__container ul>li {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.error {
+    color: red;
+    font-size: 13px;
+    display: block;
+}
+
+.error-border {
+    border: 1px solid red;
+}
+
+.map-card {
+    position: relative;
+    overflow: hidden;
+    border-radius: 12px;
+    height: 100%;
+}
+
+.map-card iframe {
+    width: 100%;
+    height: 100%;
+    border: 0;
+    min-height: 260px;
+}
+
+.map-overlay {
+    position: absolute;
+    bottom: 15px;
+    left: 15px;
+    right: 15px;
+    background: #fff;
+    padding: 15px;
+    border-radius: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.15);
+}
+
+.map-overlay h6 {
+    margin: 0;
+    font-weight: 600;
+}
+
+.map-overlay p {
+    margin: 0;
+    font-size: 14px;
+    color: #666;
+}
+
+.btn-directions {
+    background: #f4b400;
+    border: none;
+    color: #000;
+    font-weight: 600;
+    padding: 6px 14px;
+    border-radius: 6px;
+    text-decoration: none;
+}
+
+.btn-directions:hover {
+    background: #e0a800;
+    color: #000;
+}

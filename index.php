@@ -1,0 +1,362 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Royal Builders - Trusted Construction Company in Nagercoil</title>
+  <meta name="description"
+    content="Royal Builders is Nagercoil's most trusted residential and commercial construction company. We provide complete civil engineering, interior designing, and land promotion services." />
+  <meta name="author" content="Royal Builders" />
+  <link rel="canonical" href="/" />
+  <link rel="icon" href="./images/favicon.png" type="image/x-icon">
+  <meta property="og:title" content="Royal Builders - Construction Excellence in Nagercoil" />
+  <meta property="og:description"
+    content="Expert residential &amp; commercial construction, interior design, and civil engineering services in Nagercoil, Tamil Nadu." />
+  <meta property="og:type" content="website" />
+  <meta property="og:image" content="https://images.unsplash.com/photo-1504307651254-35680f356dfd?q=80&amp;w=1200" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Royal Builders - Trusted Construction Company in Nagercoil" />
+  <meta name="twitter:description"
+    content="Residential &amp; commercial construction, interior design, and land promotion services in Nagercoil." />
+  <link rel="preload" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" as="style"
+    onload="this.onload=null;this.rel='stylesheet'">
+  <noscript>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+  </noscript>
+  <link rel="stylesheet" href="./landing.css" />
+  <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "LocalBusiness",
+        "name": "Royal Builders",
+        "description": "Residential and commercial construction company in Nagercoil offering civil engineering, interior design, and land promotion services.",
+        "address": {
+          "@type": "PostalAddress",
+          "addressLocality": "Nagercoil",
+          "addressRegion": "Tamil Nadu",
+          "addressCountry": "IN"
+        },
+        "telephone": "+91-944-335-6986",
+        "url": "/"
+      }
+    </script>
+</head>
+
+<body>
+  <?php include "includes/header.php"; ?>
+  <main>
+    <section id="home" class="rb-hero d-flex align-items-center">
+      <div class="rb-hero-bg"></div>
+      <div class="rb-hero-overlay"></div>
+      <div class="container position-relative">
+        <div class="col-lg-7">
+          <div class="rb-hero-badge mb-3 d-inline-block">
+            <p class="mb-0 text-uppercase fw-bold">Construction is our passion!</p>
+          </div>
+          <h1 class="rb-hero-title mb-3">
+            We Build Your Home <span class="rb-text-primary">Secure &amp; Safe</span>
+          </h1>
+          <p class="rb-hero-subtitle mb-4">
+            Build your home secure and safe with a professional touch. We are one of the most trusted and dependable
+            residential building &amp; construction companies in Nagercoil.
+          </p>
+          <div class="d-flex flex-wrap gap-3">
+            <a href="#profile" class="btn rb-btn-primary btn-lg px-4">Our Services</a>
+            <a href="#contact" class="btn rb-btn-outline-light btn-lg px-4">Get a Quote</a>
+          </div>
+        </div>
+      </div>
+      <div class="rb-hero-bottom-fade"></div>
+    </section>
+    <section class="rb-section bg-white position-relative" aria-label="Key features">
+      <div class="container">
+        <div class="row g-4 p-0 m-0">
+          <div class="col-md-4">
+            <article class="rb-feature-card h-100">
+              <div class="rb-feature-icon mb-3"></div>
+              <h2 class="rb-feature-title">Creative Plan &amp; Design</h3>
+                <p class="rb-feature-text">
+                  Creative architectural planning that blends functionality, aesthetics, and contextual design into meaningful, lasting spaces.
+                </p>
+            </article>
+          </div>
+          <div class="col-md-4">
+            <article class="rb-feature-card h-100">
+              <div class="rb-feature-icon mb-3"></div>
+              <h2 class="rb-feature-title">Talented Peoples</h3>
+                <p class="rb-feature-text">
+                  A team of talented professionals dedicated to creative design, precision, and architectural excellence.
+                </p>
+            </article>
+          </div>
+          <div class="col-md-4">
+            <article class="rb-feature-card h-100">
+              <div class="rb-feature-icon mb-3"></div>
+              <h2 class="rb-feature-title">Modern Tools</h3>
+                <p class="rb-feature-text">
+                  Modern tools and technologies enabling precise planning, efficient workflows, and high-quality architectural outcomes.
+                </p>
+            </article>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="profile" class="rb-section rb-section-muted" aria-label="Royal Builders core businesses">
+      <div class="container">
+        <div class="text-center mb-5">
+          <h2 class="rb-section-title">Royal Builders Core Businesses</h2>
+          <p class="rb-section-subtitle">
+            Comprehensive construction and design solutions tailored to your needs.
+          </p>
+        </div>
+        <div class="row g-4 p-0 m-0">
+          <div class="col-md-6 col-lg-3">
+            <article class="rb-service-card h-100">
+              <div class="rb-service-image-wrapper">
+                <img src="https://images.unsplash.com/photo-1560518883-ce09059eeffa?q=80&amp;w=800"
+                  class="img-fluid rb-service-image" alt="Modern residential construction exterior view" />
+              </div>
+              <div class="rb-service-body">
+                <h3 class="rb-service-title">Residential Construction</h3>
+                <p class="rb-service-text">
+                  Trusted residential &amp; commercial construction company in Nagercoil providing complete civil
+                  engineering services.
+                </p>
+                <button type="button" class="rb-link-button">Learn More</button>
+              </div>
+            </article>
+          </div>
+          <div class="col-md-6 col-lg-3">
+            <article class="rb-service-card h-100">
+              <div class="rb-service-image-wrapper">
+                <img src="https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?q=80&amp;w=800"
+                  class="img-fluid rb-service-image" alt="Commercial tower construction project" />
+              </div>
+              <div class="rb-service-body">
+                <h3 class="rb-service-title">Commercial Construction</h3>
+                <p class="rb-service-text">
+                  Our expert architects and civil engineers deliver high-quality commercial buildings.
+                </p>
+                <button type="button" class="rb-link-button">Learn More</button>
+              </div>
+            </article>
+          </div>
+          <div class="col-md-6 col-lg-3">
+            <article class="rb-service-card h-100">
+              <div class="rb-service-image-wrapper">
+                <img src="https://images.unsplash.com/photo-1618221195710-dd6b41faaea6?q=80&amp;w=800"
+                  class="img-fluid rb-service-image" alt="Modern interior design of living space" />
+              </div>
+              <div class="rb-service-body">
+                <h3 class="rb-service-title">Interior Designing</h3>
+                <p class="rb-service-text">
+                  Residential, commercial and industrial interior design solutions that enhance spaces.
+                </p>
+                <button type="button" class="rb-link-button">Learn More</button>
+              </div>
+            </article>
+          </div>
+          <div class="col-md-6 col-lg-3">
+            <article class="rb-service-card h-100">
+              <div class="rb-service-image-wrapper">
+                <img src="https://images.unsplash.com/photo-1500382017468-9049fed747ef?q=80&amp;w=800"
+                  class="img-fluid rb-service-image" alt="Land promotion and property development" />
+              </div>
+              <div class="rb-service-body">
+                <h3 class="rb-service-title">Land Promoters</h3>
+                <p class="rb-service-text">
+                  Complete guidance for property purchase with clear documentation and expert support.
+                </p>
+                <button type="button" class="rb-link-button">Learn More</button>
+              </div>
+            </article>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="about" class="rb-section" aria-label="Why choose Royal Builders">
+      <div class="container">
+        <div class="row align-items-center g-5 p-0 m-0">
+          <div class="col-lg-6">
+            <h2 class="rb-section-title">
+              Why Choose <span class="rb-text-primary">Royal Builders?</span>
+            </h2>
+            <p class="rb-section-subtitle rb-about-text mb-4">
+              With years of experience in the construction industry, we have established ourselves as one of
+              Nagercoil's most dependable construction companies. Our commitment to quality and customer
+              satisfaction sets us apart.
+            </p>
+            <div class="row g-3 p-0 m-0">
+              <div class="col-sm-6">
+                <div class="rb-check-item">Expert architects and civil engineers</div>
+              </div>
+              <div class="col-sm-6">
+                <div class="rb-check-item">Trusted residential &amp; commercial builder</div>
+              </div>
+              <div class="col-sm-6">
+                <div class="rb-check-item">Complete civil engineering services</div>
+              </div>
+              <div class="col-sm-6">
+                <div class="rb-check-item">Interior design expertise</div>
+              </div>
+              <div class="col-sm-6">
+                <div class="rb-check-item">Land promotion services</div>
+              </div>
+              <div class="col-sm-6">
+                <div class="rb-check-item">Quality construction materials</div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-6 position-relative">
+            <div class="rb-about-image-wrapper">
+              <img src="https://images.unsplash.com/photo-1503387762-592deb58ef4e?q=80&amp;w=1000"
+                class="img-fluid rb-about-image" alt="Construction site with workers and equipment" />
+            </div>
+            <div class="rb-stat-box rb-stat-experience">
+              <div class="rb-stat-number">25+</div>
+              <div class="rb-stat-label">Years Experience</div>
+            </div>
+            <div class="rb-stat-box rb-stat-projects">
+              <div class="rb-stat-number">200+</div>
+              <div class="rb-stat-label">Projects Completed</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="project" class="rb-section rb-section-muted" aria-label="Recent projects">
+      <div class="container">
+        <div class="text-center mb-5">
+          <h2 class="rb-section-title">
+            Our Recent <span class="rb-text-primary">Projects</span>
+          </h2>
+          <p class="rb-section-subtitle">
+            Explore some of our finest construction projects delivered with excellence.
+          </p>
+        </div>
+        <div class="row g-4 p-0 m-0">
+          <div class="col-md-6 col-lg-4">
+            <article class="rb-project-card h-100">
+              <div class="rb-project-image-wrapper">
+                <img src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?q=80&amp;w=800"
+                  class="img-fluid rb-project-image" alt="Modern residential complex exterior" />
+              </div>
+              <div class="rb-project-overlay">
+                <span class="rb-project-category">Residential</span>
+                <h3 class="rb-project-title">Modern Residential Complex</h3>
+              </div>
+            </article>
+          </div>
+          <div class="col-md-6 col-lg-4">
+            <article class="rb-project-card h-100">
+              <div class="rb-project-image-wrapper">
+                <img src="https://images.unsplash.com/photo-1545324418-cc1a3fa10c00?q=80&amp;w=800"
+                  class="img-fluid rb-project-image" alt="Tall commercial office tower" />
+              </div>
+              <div class="rb-project-overlay">
+                <span class="rb-project-category">Commercial</span>
+                <h3 class="rb-project-title">Commercial Tower</h3>
+              </div>
+            </article>
+          </div>
+          <div class="col-md-6 col-lg-4">
+            <article class="rb-project-card h-100">
+              <div class="rb-project-image-wrapper">
+                <img src="https://images.unsplash.com/photo-1613490493576-7fde63acd811?q=80&amp;w=800"
+                  class="img-fluid rb-project-image" alt="Luxury villa with modern architecture" />
+              </div>
+              <div class="rb-project-overlay">
+                <span class="rb-project-category">Residential</span>
+                <h3 class="rb-project-title">Luxury Villa</h3>
+              </div>
+            </article>
+          </div>
+          <div class="col-md-6 col-lg-4">
+            <article class="rb-project-card h-100">
+              <div class="rb-project-image-wrapper">
+                <img src="https://images.unsplash.com/photo-1590959651373-a3db0f38a961?q=80&amp;w=800"
+                  class="img-fluid rb-project-image" alt="Large industrial complex project" />
+              </div>
+              <div class="rb-project-overlay">
+                <span class="rb-project-category">Industrial</span>
+                <h3 class="rb-project-title">Industrial Complex</h3>
+              </div>
+            </article>
+          </div>
+          <div class="col-md-6 col-lg-4">
+            <article class="rb-project-card h-100">
+              <div class="rb-project-image-wrapper">
+                <img src="https://images.unsplash.com/photo-1519643381401-22c77e60520e?q=80&amp;w=800"
+                  class="img-fluid rb-project-image" alt="Shopping mall exterior design" />
+              </div>
+              <div class="rb-project-overlay">
+                <span class="rb-project-category">Commercial</span>
+                <h3 class="rb-project-title">Shopping Mall</h3>
+              </div>
+            </article>
+          </div>
+          <div class="col-md-6 col-lg-4">
+            <article class="rb-project-card h-100">
+              <div class="rb-project-image-wrapper">
+                <img src="https://images.unsplash.com/photo-1512917774080-9991f1c4c750?q=80&amp;w=800"
+                  class="img-fluid rb-project-image" alt="Modern residential apartments block" />
+              </div>
+              <div class="rb-project-overlay">
+                <span class="rb-project-category">Residential</span>
+                <h3 class="rb-project-title">Residential Apartments</h3>
+              </div>
+            </article>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="contact" class="rb-contact-section" aria-label="Contact Royal Builders">
+      <div class="rb-contact-bg"></div>
+      <div class="rb-contact-overlay"></div>
+      <div class="container position-relative">
+        <div class="text-center mb-5">
+          <h2 class="rb-section-title text-white">Ready to Start Your Project?</h2>
+          <p class="rb-section-subtitle text-white-50">
+            Get in touch with us today and let's build something amazing together.
+          </p>
+        </div>
+        <div class="row g-4 mb-4 text-center text-white p-0 m-0">
+          <div class="col-md-4">
+            <div class="rb-contact-item">
+              <div class="rb-contact-icon mb-2"></div>
+              <div class="rb-contact-label">Call Us</div>
+              <a href="tel:+919443356986" class="rb-contact-value">+91-944-335-6986</a>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="rb-contact-item">
+              <div class="rb-contact-icon mb-2"></div>
+              <div class="rb-contact-label">Email Us</div>
+              <a href="mailto:info@royalbuilders.org" class="rb-contact-value">info@royalbuilders.org</a>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="rb-contact-item">
+              <div class="rb-contact-icon mb-2"></div>
+              <div class="rb-contact-label">Visit Us</div>
+              <div class="rb-contact-value">Nagercoil, Tamil Nadu</div>
+            </div>
+          </div>
+        </div>
+        <div class="text-center">
+          <a href="tel:+919443356986" class="btn rb-btn-light btn-lg px-5">Get a Free Consultation</a>
+        </div>
+      </div>
+    </section>
+  </main>
+  <?php include "includes/footer.php"; ?>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"
+    defer></script>
+  <script>
+    document.getElementById("rbYear").textContent = new Date().getFullYear();
+  </script>
+</body>
+
+</html>
